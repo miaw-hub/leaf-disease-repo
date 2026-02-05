@@ -1,0 +1,7 @@
+A list of libraries needed:
+numpy
+opencv-python
+matplotlib
+seaborn
+scikit-learn
+scikit-image
