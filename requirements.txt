@@ -5,3 +5,7 @@ matplotlib
 seaborn
 scikit-learn
 scikit-image
+pandas
+opencv-python (cv2): This is the core of project. It handles reading images, resizing them to the required dimensions, and converting color spaces (like BGR to HSV).
+scikit-image: I used this for feature.hog and feature.local_binary_pattern. Without this, the feature extraction code will crash.
+scikit-learn: This provides the SVM, KNN, and Decision Tree models I specifically compared.
