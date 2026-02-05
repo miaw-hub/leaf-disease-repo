@@ -22,6 +22,6 @@ And more (21 total categories).
 After prediction, the system fetches a treatment from the TREATMENTS dictionary (e.g., Fungicide recommendations or pruning tips).
 
 --How to Use--
-Clone the repo: git clone https://github.com/your-username/your-repo-name.git
+Clone the repo
 Install requirements: pip install -r requirements.txt
 Run the notebook: Open leaf_disease.ipynb and run the cells. You can upload your own leaf image in the final cell to get a prediction and recommendation.
