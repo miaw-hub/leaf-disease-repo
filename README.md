@@ -1,5 +1,6 @@
 # Leaf Disease Detection and Treatment System 
-This project uses Computer Vision and Machine Learning to identify 21 different types of plant diseases (across Apple, Corn, Potato, Tomato, etc.) and provides instant treatment recommendations.
+This project uses Computer Vision and Machine Learning to identify 21 different types of plant diseases (across Apple, Corn, Potato, Tomato, etc.) and provides instant treatment recommendations. 
+note: Optimized for Google Colab; change the DATA_DIR path if running locally.
 
 --Project Highlights--
 Dataset: Processed 6,294 images across 21 categories.
@@ -12,6 +13,16 @@ Top Performance: The Support Vector Machine (SVM) model achieved an accuracy of 
 --Tech Stack--
 Language: Python
 Libraries: Scikit-Learn (SVM, KNN, DT), OpenCV (Image processing), Scikit-Image (Feature extraction).
+
+--Data Processing Pipeline--
+The project follows a structured Computer Vision pipeline using OpenCV and OS:
+Data Loading (os): Systematically walked through directory structures to label images based on folder names.
+Preprocessing (cv2): * Images resized to a uniform dimension.
+Color conversion from BGR to HSV for better color-based disease detection.
+Feature Extraction: * HOG: To capture the shape of leaf lesions.
+LBP: To capture the texture of the disease (e.g., crusty vs. smooth spots).
+Color Histograms: To detect yellowing or browning.
+Classification: Comparing SVM, KNN, and Decision Trees to find the most accurate model.
 
 --Categorization & Recommendations--
 The system classifies diseases including:
